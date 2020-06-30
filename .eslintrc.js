@@ -8,6 +8,7 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:react/recommended',
 	],
+	"parser": "babel-eslint",
 	'globals': {
 		'Atomics': 'readonly',
 		'SharedArrayBuffer': 'readonly',
@@ -40,5 +41,7 @@ module.exports = {
 			'never'
 		],
 		"no-undefined": 0,
+		"no-unused-vars":0,
+		"react/prop-types":'off'
 	}
 }

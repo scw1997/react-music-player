@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
+// import {createHashHistory} from 'history'
+// const history=createHashHistory()
+import store from './store'
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<App store={store}/>
 	</React.StrictMode>,
 	document.getElementById('root')
 )
