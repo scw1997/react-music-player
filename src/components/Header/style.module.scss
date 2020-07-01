@@ -1,0 +1,17 @@
+.NavBar{
+    & :global(.am-navbar){
+      height: 60px;
+    }
+    & :global(.am-navbar-left){
+      flex: 3;
+      font-size: 18px;
+      *{
+        vertical-align: middle;
+      }
+
+    }
+}
+.iconMusic{
+  border-radius: 50%;
+  background-color: #ffffff;
+}

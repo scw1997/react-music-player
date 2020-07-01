@@ -1,19 +1,21 @@
 import asyncComponent from './asyncComponent'
-const page1 = asyncComponent(() => import('Pages/page1'))
+const index = asyncComponent(() => import('Pages/index'))
 const page2 = asyncComponent(() => import('Pages/page2'))
 
 let AppRoutes=[
 	{
-		path:'/page1',
-		component:page1,
+		path:'/index',
+		component:index,
 		exact:true,
-		child:'child'
+		child:[
+			{
+				path:'/page2',
+				component:page2,
+				exact:true,
+				child:'child'
+			},
+		]
 	},
-	{
-		path:'/page2',
-		component:page2,
-		exact:true,
-		child:'child'
-	}
+
 ]
 export default AppRoutes

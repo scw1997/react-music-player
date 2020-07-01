@@ -1,5 +1,4 @@
 import React, {PureComponent,useState,useEffect,memo} from 'react'
-import page1 from '../pages/page1'
 function asyncComponent (importComponent) {
 
 	function AsyncComponent (props) {
