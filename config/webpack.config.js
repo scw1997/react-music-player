@@ -301,6 +301,7 @@ module.exports = function(webpackEnv) {
         'Pages':path.join(__dirname,'../src/pages'),
         'Utils':path.join(__dirname,'../src/utils'),
         'Components':path.join(__dirname,'../src/components'),
+        'Icon':path.join(__dirname,'../public/icon'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding

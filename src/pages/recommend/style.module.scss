@@ -1,0 +1,42 @@
+.songList{
+  width: 100%;
+  padding: 10px;
+  li{
+    background-color: #ffffff;
+    padding: 6px 8px;
+    display: flex;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    align-items: center;
+    &>div:first-child{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      flex: 9;
+      :global(.songName){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 14px;
+        color: #333333;
+        font-weight: bold;
+      }
+      :global(.singer){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #aaaaaa;
+      }
+    }
+    & :global(.icon-play){
+      flex: 1;
+      justify-content: center;
+      text-align: center;
+        color: #108ee9;
+    }
+  }
+}

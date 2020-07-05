@@ -22,31 +22,6 @@ function asyncComponent (importComponent) {
 
 	return memo(AsyncComponent)
 
-	// class AsyncComponent extends PureComponent {
-	// 	constructor(props){
-	// 		super(props)
-	// 		this.state={
-	// 			Component:null
-	// 		}
-	// 	}
-	// 	async componentDidMount() {
-	// 		const {default:Component} = await importComponent()
-	// 		this.setState({
-	// 			Component
-	// 		})
-	// 	}
-	//
-	// 	render() {
-	// 		const { Component } = this.state
-	// 		return (
-	// 			<div>
-	// 				{Component?<Component/>:<div></div>}
-	// 			</div>
-	// 		)
-	// 	}
-	// }
-	//
-	// return AsyncComponent
 
 
 
