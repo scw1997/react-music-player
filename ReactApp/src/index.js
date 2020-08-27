@@ -7,10 +7,7 @@ import * as serviceWorker from './serviceWorker'
 // const history=createHashHistory()
 import store from './store'
 
-ReactDOM.render(
-	<React.StrictMode>
-		<App store={store}/>
-	</React.StrictMode>,
+ReactDOM.render(<App store={store}/>,
 	document.getElementById('root')
 )
 

@@ -43,6 +43,7 @@ module.exports = {
 		"no-undefined": 0,
 		"no-unused-vars":0,
 		"react/prop-types":'off',
-		'no-mixed-spaces-and-tabs':0
+		'no-mixed-spaces-and-tabs':0,
+		'react/no-deprecated':0,
 	}
 }

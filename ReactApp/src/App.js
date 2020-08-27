@@ -13,7 +13,7 @@ function App (props) {
 				<Router >
 					<Switch>
 						{AppRoutes.map((item,index)=>{
-							return <Route  key={index} exact={item.exact} path={item.path} render={props=>(<item.component  {...props}  child={item.child}/>)}/>
+							return <Route  key={index} exact={item.exact} path={item.path} render={props=>(<item.component  {...props} />)}/>
 						})}
 					</Switch>
 
